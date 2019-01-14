@@ -1,0 +1,10 @@
+{
+  "name": "Model Folder",
+  "description": "Opens the model directory.",
+  "creator": "Thomas Thomassen",
+  "copyright": "Copyright (c) 2019",
+  "license": "MIT",
+  "product_id": "TT_ModelFolder",
+  "version": "1.0.0",
+  "build": "1"
+}

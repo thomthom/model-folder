@@ -1,0 +1,19 @@
+{
+  "name": "Model Folder",
+  "description": "",
+  "namespace": "TT::Plugins::ModelFolder",
+  "basename": "tt_modelfolder",
+  "author": "Thomas Thomassen",
+  "copyright": "Copyright (c) 2019",
+  "license": "MIT",
+  "sources": [
+    "github.com",
+    "bitbucket.org"
+  ],
+  "libraries": [
+
+  ],
+  "modules": [
+
+  ]
+}
