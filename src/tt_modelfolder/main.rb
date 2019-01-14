@@ -11,20 +11,21 @@ module TT::Plugins::ModelFolder
 
   def self.open_from_model_folder
     model = Sketchup.active_model
-    return unless model
-    unless model.path.empty?
-      folder = File.dirname(model.path)
-      UI.openpanel('Open', folder, 'SketchUp Files (*.skp)|*.skp||')
-    end
+    return if model.nil? || model.path.empty?
+
+    folder = File.dirname(model.path)
+    file = UI.openpanel('Open', folder, 'SketchUp Files (*.skp)|*.skp||')
+    return unless file
+
+    Sketchup.open_file(file)
   end
 
   def self.open_model_folder
     model = Sketchup.active_model
-    return unless model
-    unless model.path.empty?
-      folder = File.dirname(model.path)
-      UI.openURL(folder)
-    end
+    return if model.nil? || model.path.empty?
+
+    folder = File.dirname(model.path)
+    UI.openURL(folder)
   end
 
 end # module
